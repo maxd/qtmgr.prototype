@@ -2,14 +2,18 @@
     error( Couldn't find the common.pri file! )
 }
 
-QT       += core gui
-
-TARGET = gui
 TEMPLATE = lib
 CONFIG += staticlib
+
+TARGET = gui
+
+QT       += core gui
 
 SOURCES += mainwindow.cpp
 
 HEADERS  += mainwindow.h
 
 FORMS    += mainwindow.ui
+
+INCLUDEPATH += \
+    ../controls

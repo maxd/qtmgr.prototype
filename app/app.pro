@@ -1,5 +1,11 @@
-TARGET = qtmgr
 TEMPLATE = app
+
+
+TARGET = qtmgr
+PRE_TARGETDEPS += \
+    ../gui \
+    ../controls
+
 
 SOURCES += \
     main.cpp

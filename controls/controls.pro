@@ -2,15 +2,19 @@
     error( Couldn't find the common.pri file! )
 }
 
-TARGET = controls
 TEMPLATE = lib
 CONFIG += staticlib
 
+TARGET = controls
+
 SOURCES += \
-    filespanel.cpp
+    filespanel.cpp \
+    commandlineeditor.cpp
 
 HEADERS += \
-    filespanel.h
+    filespanel.h \
+    commandlineeditor.h
 
 FORMS += \
-    filespanel.ui
+    filespanel.ui \
+    commandlineeditor.ui

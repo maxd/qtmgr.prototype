@@ -17,6 +17,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    void setupFilesPanels();
 };
 
 #endif // MAINWINDOW_H
