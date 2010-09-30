@@ -19,9 +19,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::setupFilesPanels()
 {
-//    QSplitter *filesPanelsSplitter = new QSplitter(this);
-//    FilesPanel *leftFilesPanel = new FilesPanel();
-//    FilesPanel *rightFilesPanel = new FilesPanel();
-//    filesPanelsSplitter->addWidget(leftFilesPanel);
-//    filesPanelsSplitter->addWidget(rightFilesPanel);
+    FilesPanel *leftFilesPanel = new FilesPanel();
+    ui->leftFilesPanelPlaceholder->addWidget(leftFilesPanel);
+
+    FilesPanel *rightFilesPanel = new FilesPanel();
+    ui->rightFilesPanelPlaceholder->addWidget(rightFilesPanel);
 }
