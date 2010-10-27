@@ -1,5 +1,5 @@
 ! include( ../staticlib.pri ) {
-    error( Couldn't find the staticlib.pri file! )
+    error( "Could no't find the staticlib.pri file!" )
 }
 
 TARGET = controls
